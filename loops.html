@@ -15,6 +15,10 @@
 // indice++ é usado no while para sempre somar um numero
         }
         do{
+            if (numero > 10) {
+                alert("Digitou numero maior que 10")
+                break
+            }
             document.write(`${indice} x ${numero} = ${(indice * numero)} <br>`)
             indice++
         } while (indice <= 10)
