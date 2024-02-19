@@ -26,6 +26,21 @@
             console.log("ola mundo de arrow function")
         }
         ola3()
+
+// function o _n1 se nao passar valor ele é = 0
+        function somar (_n1 = 0, _n2 = 0) {
+            // // as variaveis abaixo é tipo curto circuito se nao passar valor nenhum ele pega 0, usar esse modelo para browser antigo
+            // let _n1 = n1 || 0
+            // let _n2 = n2 || 0
+
+            return _n1 + _n2
+        }
+        let soma = somar (1 , 2)
+        console.log (soma)
+
+        console.log(somar(1, 5))
+        alert(somar(5, 9))
+        console.log (somar())
     </script>
 </body>
 </html>
