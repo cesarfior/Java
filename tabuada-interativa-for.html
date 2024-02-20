@@ -13,12 +13,17 @@
         const output = document.getElementById("output")
 
         function mostrarTabuada() {
-            let numerotabuada = parseFloat( prompt("Digite um numero") )
-            let indice = 0
-            while(indice <= 10){
-            document.write(`${indice} x ${numerotabuada} = ${(indice * numerotabuada)} <br>`)
-            indice++
+            let n = parseFloat(prompt("Digite um numero"))
+            let msg = ""
+            for (let i = 0; i <= 10; i++){
+                msg += `${n} x ${i} = ${(n * i)} <br>`
             }
+            output.innerHTML = msg
+
+            }
+        
+            function limpartabuada() {
+                output.innerText = ""
             // output.innerHTML = "Valor qualquer <br> pula linha"
             //pedir para usuário digitar um numero
             //mostrar a tabuada do numero
